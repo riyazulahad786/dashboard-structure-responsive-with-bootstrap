@@ -1,0 +1,21 @@
+:root{
+    --offcanvas-width:270px;
+    --topNavbarHeight:56px;
+}
+.sidebar-navbar{
+    width: var(--offcanvas-width) !important;
+}
+.core{
+    color: white !important;
+}
+@media (min-width:992px) {
+    .sidebar-navbar{
+        transform: none !important;
+        visibility: visible !important;
+        top: var(--topNavbarHeight) !important;
+        height: calc(100%- var(--topNavbarHeight)) !important;
+    }
+    .inner{
+        margin-left: var(--offcanvas-width);
+    }
+}
